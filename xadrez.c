@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
@@ -28,9 +30,9 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    const char bispo[5] = bispo , rainha[6]=rainha , torre[5]=torre;
+    const char pecas;
     int casas; 
-    const char esquerda[8]=esquerda , direita[7]=direita, cima[4]=cima, baixo[5]=baixo , diagonal[8]=diagonal;
+    const char lado;
     const char diagonalSuperior[32]=diagonalSuperior, diagonalInferior[16]=diagonalInferior;
     int opcao1; 
     char opcao2[20] ,opcao3;
@@ -46,47 +48,23 @@ int main() {
     printf("Opcao: ");
     scanf("%d", &opcao1);
 
-    switch (opcao1)
-    {
-    case 1:
-        printf("Selecionado : Bispo\n");
-        
-        Printf("Digite a Direcao")
+if (strcmp(pecas, "bispo")==0){
 
+    printf("Você selecionou o Bispo\n");
 
+}else if (strcmp(pecas, "rainha")==0) {
 
-        switch (opcao2)
-        {
-        case 1:
-            /* code */
-            break;
-        
-        default:
-            break;
-        }
+    printf("Voce selecionou a Rainha!/n");
 
-        break;
-    
-    case 2:
-       printf("Selecionado : Rainha\n");
+ } else if (strcmp(pecas, "torre")==0) {
 
+    printf("Voce selecionou a Torre!\n");
 
-        break;
+ } else {
+    printf("Opçao incorreta");
+ }
 
-    case 3:
-        printf("Selecionado : Torre\n");
-
-
-        break;
-
-
-    default:
-    printf("Opcao invalida");
-
-        break;
-    }
-
-
+        } while ()
 
 
 
