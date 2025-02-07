@@ -30,12 +30,12 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    const char pecas;
+    char pecas[10]="";
     int casas; 
     const char lado;
-    const char diagonalSuperior[32]=diagonalSuperior, diagonalInferior[16]=diagonalInferior;
+    // const char diagonalSuperior[32]=diagonalSuperior, diagonalInferior[16]=diagonalInferior;
     int opcao1; 
-    char opcao2[20] ,opcao3;
+    char opcao2 ,opcao3;
 
     printf("Jogo de Xadrez:\n");
     printf("Digite qual Peça Movimentar\n");
@@ -48,24 +48,36 @@ int main() {
     printf("Opcao: ");
     scanf("%d", &opcao1);
 
-if (strcmp(pecas, "bispo")==0){
+switch (opcao1)
+{
+case 1: 
+    printf("Voce Selecionou o Bispo");
+    
+    break;
 
-    printf("Você selecionou o Bispo\n");
+case 2:
+    printf("Voce Selecionou o Bispo");
 
-}else if (strcmp(pecas, "rainha")==0) {
+    break;
 
-    printf("Voce selecionou a Rainha!/n");
 
- } else if (strcmp(pecas, "torre")==0) {
+case 3:
+    printf("Voce Selecionou o Bispo");
 
-    printf("Voce selecionou a Torre!\n");
+    break;
 
- } else {
-    printf("Opçao incorreta");
- }
+case 4:
+    printf("saindo...");
 
-        } while ()
+    break;
 
+
+default:
+    printf("Opcao invalida!!");
+    break;
+}
+
+        } while (opcao1 != 4);
 
 
     return 0;
