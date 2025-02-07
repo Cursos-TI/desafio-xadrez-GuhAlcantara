@@ -51,18 +51,23 @@ int main() {
 switch (opcao1)
 {
 case 1: 
-    printf("Voce Selecionou o Bispo");
-    
+        printf("Bispo \n");
+        printf("5 casas\n");
+        printf("Direita\n");
+        printf("Cima\n");
     break;
 
 case 2:
-    printf("Voce Selecionou o Bispo");
-
+    printf("Rainha\n");
+    printf("5 casas\n");
+    printf("Direita\n");
     break;
 
 
 case 3:
-    printf("Voce Selecionou o Bispo");
+    printf("Torre\n");
+    printf("8 casas\n");
+    printf("Esquerda\n");
 
     break;
 
