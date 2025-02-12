@@ -30,12 +30,9 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    char pecas[10]="";
-    int casas; 
-    const char lado;
-    // const char diagonalSuperior[32]=diagonalSuperior, diagonalInferior[16]=diagonalInferior;
-    int opcao1; 
-    char opcao2 ,opcao3;
+
+    int bispo =  0 , rainha = 0 , torre = 0 ,  cavalo = 0 , j ; 
+    int opcao1;
 
     printf("Jogo de Xadrez:\n");
     printf("Digite qual Peça Movimentar\n");
@@ -44,34 +41,76 @@ int main() {
     printf("1. Bispo\n");
     printf("2. Rainha\n");
     printf("3. Torre\n");
-    printf("4. Sair\n");
+    printf("4. Cavalo (for)\n");
+    printf("5. Cavalo (while)\n");
+    printf("0. Sair\n");
     printf("Opcao: ");
     scanf("%d", &opcao1);
 
 switch (opcao1)
 {
-case 1: 
-        printf("Bispo \n");
-        printf("5 casas\n");
-        printf("Direita\n");
+case 1:  // movimentaçao do bispo
+
+        while( bispo <= 4){
+		
+        printf("Direta\n");
         printf("Cima\n");
+        bispo++;
+        
+	}
+	
+	break;
+
+case 2: // movimentacao da rainha 
+    
+    while( rainha <= 7){
+		
+        printf("Esquerda\n");
+        rainha++;
+        
+	}
+    
     break;
 
-case 2:
-    printf("Rainha\n");
-    printf("5 casas\n");
-    printf("Direita\n");
-    break;
 
-
-case 3:
-    printf("Torre\n");
-    printf("8 casas\n");
-    printf("Esquerda\n");
+case 3: // movimentaçao da torre
+   
+   while( torre <= 4){
+		
+        printf("Direita\n");
+        torre++;
+        
+	}
 
     break;
 
-case 4:
+case 4: // movimentaçao do cavalo com o FOR
+	
+    for (cavalo = 0; cavalo <= 0 ; cavalo++)
+    	printf("Direita\n");
+    	
+    	for(j = 0 ; j <= 2 ; j++)
+		printf("Cima\n");
+	
+	break;
+
+case 5: // movimentaçao do cavalo com o while
+	
+	while(cavalo <= 0){
+				
+		while(j <= 2){
+		printf("Cima\n");	
+		j++;
+		}
+		
+		printf("Direita\n");
+		cavalo++;
+		
+	}
+
+	break;
+
+case 0:
     printf("saindo...");
 
     break;
@@ -82,7 +121,8 @@ default:
     break;
 }
 
-        } while (opcao1 != 4);
+        } while (opcao1 != 0
+		);
 
 
     return 0;
